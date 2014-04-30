@@ -2,15 +2,27 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    title JS++
+    title Weather Map
     link(rel='stylesheet', href='./css/app.css')
   body
-    h1 JS++
+    h1 Weather Map
+
+    #container
+      #left-col
+        #controls
+          input#zip(type='text', placeholder='Enter Zipcode', autofocus=true)
+          button#add Add Zipcode
+        #map
+      #right-col
 
     script(src='./js/vendor/traceur.js')
     script(src='./js/vendor/experimental.js')
     script(src='./js/vendor/jquery-2.1.0.js')
     script(src='./js/vendor/lodash-2.4.1.js')
     script(src='./js/vendor/moment-2.6.0.js')
+    script(src='http://www.amcharts.com/lib/3/amcharts.js')
+    script(src='http://www.amcharts.com/lib/3/serial.js')
+    script(src='http://www.amcharts.com/lib/3/themes/none.js')
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB-MsJZIk0Xp1-wXiuAzo0fOQew3q0it_k&sensor=true')
     script(src='./js/es5/main.js')
     script(src='./js/es6/main.js')
